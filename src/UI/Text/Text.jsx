@@ -14,8 +14,6 @@ export const Text = prop => {
     href,
     center,
     fontWeight,
-    onClick,
-    ariaLabel,
   } = prop;
 
   const classes = classNames(

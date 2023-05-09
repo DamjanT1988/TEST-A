@@ -1,3 +1,14 @@
-.container {
-    
+.heading {
+  order: 1;
+  grid-column: 1/4;
+  color: #8B57C6;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .heading {
+    order: 0;
+    grid-column: auto;
+  }
 }

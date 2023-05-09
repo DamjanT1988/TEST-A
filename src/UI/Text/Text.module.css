@@ -13,6 +13,10 @@
   color: var(--black);
 }
 
+.purple {
+  color: var(--orange);
+}
+
 .orange {
   color: var(--orange);
 }
