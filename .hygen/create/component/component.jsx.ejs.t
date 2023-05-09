@@ -5,4 +5,4 @@ import style from './<%= component_name %>.module.css';
 
 export const <%= component_name %> = () => {
     return <div className={style.container}></div>
-}
+};

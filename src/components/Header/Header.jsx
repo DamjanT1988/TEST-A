@@ -5,7 +5,10 @@ import { Logo } from './Logo/Logo';
 export const Header = () => (
   <header className={style.header}>
     <Layout>
+      <div className={style.gridContainer}>
       <Logo />
+      
+      </div>
     </Layout>
   </header>  
 );
