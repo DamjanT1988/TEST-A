@@ -13,6 +13,7 @@
   object-fit: cover;
 }
 
-.user-name {
+.userName {
   margin-left: 3px;
+  color: #a09c9c;
 }

@@ -1,6 +1,6 @@
 .header {
   padding: 15px 0;
-  background-color: var(--dark);
+  background-color: #2A2A2C;
 }
 
 .gridContainer {
@@ -16,7 +16,18 @@
   }
 
   .gridContainer {
-    grid-template-columns: 50px 1fr 2fr 50px;
+    grid-template-columns: 50px 2fr 2fr 2fr 1fr 50px;;
+    gap: 30px;
+  }
+}
+
+@media (min-width: 300px) {
+  .header {
+    padding: 30px;
+  }
+
+  .gridContainer {
+    grid-template-columns: 50px 2fr 2fr 2fr 1fr 50px;;
     gap: 30px;
   }
 }
