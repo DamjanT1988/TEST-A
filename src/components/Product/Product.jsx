@@ -1,15 +1,18 @@
+import React, { useState } from 'react';
 import style from './Product.module.css';
 import tmpImage from './img/bright_pink_chair.jpg';
+import CameraStream from '../CameraStream/CameraStream';
 
-const lookInAR = () => {
-  console.log('Look');
+const lookInAR = (setShowCameraStream) => {
+  setShowCameraStream(true);
 };
 
 const addToFavorites = () => {
   console.log('Add');
 };
 
-export const Product = item => {
+export const Product = () => {
+  const [showCameraStream, setShowCameraStream] = useState(false);
   return (
     <section  className={style.product}>
       <div className={style.image}>
@@ -26,7 +29,7 @@ export const Product = item => {
 
         <div className={style.actions}>
           <button
-            onClick={lookInAR}
+            onClick={() => lookInAR(setShowCameraStream)}
             className={style.btn}>Look in AR</button>
 
           <button
@@ -38,6 +41,7 @@ export const Product = item => {
           <div className={style.purchase}>19 people added to favourites</div>
         </div>
       </div>
+      {showCameraStream && <CameraStream />}
     </section>
   );
 };
