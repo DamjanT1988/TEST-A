@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState } from 'react';
-import { Canvas, useFrame, useLoader } from '@react-three/fiber';
+import { Canvas, useThree, useLoader } from '@react-three/fiber';
 import { OrbitControls, useGLTF } from '@react-three/drei';
 import Webcam from 'react-webcam';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
@@ -14,6 +14,7 @@ const CameraStream = () => {
   const webcamRef = useRef(null);
   const [modelPosition, setModelPosition] = useState([0, 0, 0]);
   const modelUrl = '/models/chair/scene.gltf';
+  const { camera, scene } = useThree();
 
   const handleMouseMove = (event) => {
     const rect = event.target.getBoundingClientRect();
