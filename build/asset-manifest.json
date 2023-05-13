@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d1cc1320.css",
+    "main.js": "/static/js/main.a10b3c5c.js",
+    "static/media/merriweather-sans-v20-latin_cyrillic-ext-700.woff": "/static/media/merriweather-sans-v20-latin_cyrillic-ext-700.d14ade0212b2a8541413.woff",
+    "static/media/merriweather-sans-v20-latin_cyrillic-ext-500.woff": "/static/media/merriweather-sans-v20-latin_cyrillic-ext-500.2206a760c25c43b14af8.woff",
+    "static/media/merriweather-sans-v20-latin_cyrillic-ext-regular.woff": "/static/media/merriweather-sans-v20-latin_cyrillic-ext-regular.44846330ef5e4435929c.woff",
+    "static/media/merriweather-sans-v20-latin_cyrillic-ext-700.woff2": "/static/media/merriweather-sans-v20-latin_cyrillic-ext-700.e85ac293918fc6af7b45.woff2",
+    "static/media/merriweather-sans-v20-latin_cyrillic-ext-500.woff2": "/static/media/merriweather-sans-v20-latin_cyrillic-ext-500.72bde37dd57b911700f5.woff2",
+    "static/media/merriweather-sans-v20-latin_cyrillic-ext-regular.woff2": "/static/media/merriweather-sans-v20-latin_cyrillic-ext-regular.4117fa953d231092315a.woff2",
+    "static/media/bright_pink_chair.jpg": "/static/media/bright_pink_chair.2788042d1462a4c27162.jpg",
+    "index.html": "/index.html",
+    "static/media/search.svg": "/static/media/search.7f37a3bb84927de422c7616bc1856b90.svg",
+    "static/media/heart.svg": "/static/media/heart.63ddc8fa0ee896602c11d69560661cbf.svg",
+    "static/media/arrow.svg": "/static/media/arrow.d412babf78121a5fea10a05d7b1502fb.svg",
+    "main.d1cc1320.css.map": "/static/css/main.d1cc1320.css.map",
+    "main.a10b3c5c.js.map": "/static/js/main.a10b3c5c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d1cc1320.css",
+    "static/js/main.a10b3c5c.js"
+  ]
+}
