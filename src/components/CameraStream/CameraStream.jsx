@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from 'react';
+import React, { useRef, useEffect } from 'react';
 import style from './CameraStream.module.css';
 import { Canvas, useLoader } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
@@ -17,14 +17,14 @@ const Model = ({ modelUrl }) => {
 
 const CameraStream = () => {
   const webcamRef = useRef(null);
-  const [videoTexture, setVideoTexture] = useState(null);
   const modelUrl = '/models/chair/scene.gltf';
 
   useEffect(() => {
     if (webcamRef.current) {
       const updateTexture = () => {
         if (webcamRef.current.video.readyState === 4) {
-          setVideoTexture(new THREE.CanvasTexture(webcamRef.current.video));
+          const videoTexture = new THREE.CanvasTexture(webcamRef.current.video);
+          // use videoTexture here
         } else {
           requestAnimationFrame(updateTexture);
         }

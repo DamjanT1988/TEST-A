@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.d1cc1320.css",
-    "main.js": "/static/js/main.a10b3c5c.js",
+    "main.css": "/static/css/main.b5254d2b.css",
+    "main.js": "/static/js/main.2d2e2661.js",
     "static/media/merriweather-sans-v20-latin_cyrillic-ext-700.woff": "/static/media/merriweather-sans-v20-latin_cyrillic-ext-700.d14ade0212b2a8541413.woff",
     "static/media/merriweather-sans-v20-latin_cyrillic-ext-500.woff": "/static/media/merriweather-sans-v20-latin_cyrillic-ext-500.2206a760c25c43b14af8.woff",
     "static/media/merriweather-sans-v20-latin_cyrillic-ext-regular.woff": "/static/media/merriweather-sans-v20-latin_cyrillic-ext-regular.44846330ef5e4435929c.woff",
@@ -10,14 +10,14 @@
     "static/media/merriweather-sans-v20-latin_cyrillic-ext-regular.woff2": "/static/media/merriweather-sans-v20-latin_cyrillic-ext-regular.4117fa953d231092315a.woff2",
     "static/media/bright_pink_chair.jpg": "/static/media/bright_pink_chair.2788042d1462a4c27162.jpg",
     "index.html": "/index.html",
-    "static/media/search.svg": "/static/media/search.7f37a3bb84927de422c7616bc1856b90.svg",
-    "static/media/heart.svg": "/static/media/heart.63ddc8fa0ee896602c11d69560661cbf.svg",
-    "static/media/arrow.svg": "/static/media/arrow.d412babf78121a5fea10a05d7b1502fb.svg",
-    "main.d1cc1320.css.map": "/static/css/main.d1cc1320.css.map",
-    "main.a10b3c5c.js.map": "/static/js/main.a10b3c5c.js.map"
+    "static/media/search.svg": "/static/media/search.885c196b4645a51de85b7d7101a5c03f.svg",
+    "static/media/heart.svg": "/static/media/heart.7a9c73f07f0fd0f9a6f429e4d6923fcb.svg",
+    "static/media/arrow.svg": "/static/media/arrow.032b89480d92b1bb23e64f92a28e7445.svg",
+    "main.b5254d2b.css.map": "/static/css/main.b5254d2b.css.map",
+    "main.2d2e2661.js.map": "/static/js/main.2d2e2661.js.map"
   },
   "entrypoints": [
-    "static/css/main.d1cc1320.css",
-    "static/js/main.a10b3c5c.js"
+    "static/css/main.b5254d2b.css",
+    "static/js/main.2d2e2661.js"
   ]
 }
