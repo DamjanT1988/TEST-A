@@ -10,11 +10,10 @@ const Model = ({ modelUrl, position }) => {
   return <primitive object={gltf.scene} scale={0.4} position={position} />;
 };
 
-const CameraStream = () => {
-  const webcamRef = useRef(null);
+const Scene = () => {
+  const { camera, scene } = useThree();
   const [modelPosition, setModelPosition] = useState([0, 0, 0]);
   const modelUrl = '/models/chair/scene.gltf';
-  const { camera, scene } = useThree();
 
   const handleMouseMove = (event) => {
     const rect = event.target.getBoundingClientRect();
@@ -35,15 +34,26 @@ const CameraStream = () => {
     }
   };
 
+  useEffect(() => {
+    window.addEventListener('mousemove', handleMouseMove);
+    return () => window.removeEventListener('mousemove', handleMouseMove);
+  }, [handleMouseMove]);
+
+  return <Model modelUrl={modelUrl} position={modelPosition} />;
+};
+
+const CameraStream = () => {
+  const webcamRef = useRef(null);
+
   return (
-    <div className="app" onMouseMove={handleMouseMove}>
+    <div className="app">
       <Webcam ref={webcamRef} className="webcamBackground" />
       <Canvas className="canvasForeground">
         <ambientLight intensity={0.5} />
         <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
         <pointLight position={[-10, -10, -10]} />
         <OrbitControls />
-        <Model modelUrl={modelUrl} position={modelPosition} />
+        <Scene />
       </Canvas>
       <div>
         <h1>React Fiber + Three.js + Laptop Camera</h1>
