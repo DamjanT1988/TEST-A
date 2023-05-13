@@ -23,8 +23,8 @@ const CameraStream = () => {
     if (webcamRef.current) {
       const updateTexture = () => {
         if (webcamRef.current.video.readyState === 4) {
-          const videoTexture = new THREE.CanvasTexture(webcamRef.current.video);
-          // use videoTexture here
+          // Commented out since it's not used anywhere
+          // const videoTexture = new THREE.CanvasTexture(webcamRef.current.video);
         } else {
           requestAnimationFrame(updateTexture);
         }
