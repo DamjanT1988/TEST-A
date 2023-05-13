@@ -4,7 +4,6 @@ import { Canvas, useLoader } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
 import Webcam from 'react-webcam';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
-import * as THREE from 'three';
 
 const Model = ({ modelUrl }) => {
   const gltf = useLoader(GLTFLoader, modelUrl);
