@@ -1,8 +1,9 @@
 import React, { useRef, useState, useEffect, useCallback } from 'react';
 import style from './CameraStream.module.css';
-import { Canvas, useFrame, useThree } from '@react-three/fiber';
+import { Canvas, useFrame, useThree, useLoader } from '@react-three/fiber';
 import { OrbitControls, PerspectiveCamera, PositionalAudio, Html } from '@react-three/drei';
 import Webcam from 'react-webcam';
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import * as THREE from 'three';
 
 const Model = ({ modelUrl, position }) => {
