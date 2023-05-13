@@ -20,4 +20,6 @@
   left: 0;
   right: 0;
   bottom: 0;
+  max-height: 2048px; /* Adjust these values based on your GPU's capabilities */
+  max-width: 2048px;
 }
